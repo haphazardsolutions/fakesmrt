@@ -1,0 +1,41 @@
+# Default configuration for fakesmrt
+
+# Data Pipeline Settings
+data:
+  chunk_size: 512
+  buffer_size: 1000
+  file_extensions: ['.txt']
+  max_chunks: null  # null for no limit
+  corpus_path: "data/corpus"  # default path, override in local config
+
+# Model Architecture
+model:
+  vocab_size: 8192
+  hidden_size: 256
+  num_layers: 4
+  num_heads: 4
+  max_seq_length: 512
+
+# Training Settings
+training:
+  batch_size: 32
+  learning_rate: 1.0e-4
+  weight_decay: 0.01
+  max_epochs: 10
+  warmup_steps: 1000
+  max_grad_norm: 1.0
+  gradient_accumulation_steps: 8
+  mixed_precision: false
+
+# System Settings
+system:
+  device: "cpu"
+  num_workers: 2
+  dtype: "bfloat16"  # or "float32"
+  seed: 42
+
+# Paths
+paths:
+  output_dir: "models"
+  checkpoint_dir: "checkpoints"
+  log_dir: "logs"
