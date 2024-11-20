@@ -2,10 +2,14 @@
 
 A modular framework for training and deploying resource-efficient language models on modest hardware.
 
+### Nomenclature Note
+
+To maintain brevity and clarity, we employ "X" as a parameter unit count. 1KX indicates one *kiloparameter* (a model with 1024 parameters), while 1MX indicates one *megaparameter* (a model with 1024 x 1024 = 1048576 parameters), and so on.
+
 ## Overview
 
 fakesmrt enables training of small, efficient language models on consumer hardware through:
-- Statistical bootstrapping of micromodels (1MX parameter models)
+- Statistical bootstrapping of micromodels (1MX models)
 - Model mixing and upscaling architectures
 - Distributed training and model exchange
 - Efficient data processing pipelines
