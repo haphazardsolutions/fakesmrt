@@ -8,7 +8,7 @@ fakesmrt is being ported over from our blobjectdb platform, and at the moment, t
 
 ### Nomenclature
 
-*SSM*: Rather than training LLMs, Large Language Models, fakesmrt focuses on SSMs, Small Semantic Models. These one-megaparameter models are trained on English text converted to the bAIsic sementic language, allowing training data containing divergent vocabularies to contribute to compatible micromodels.
+*SSM*: Rather than training LLMs, Large Language Models, fakesmrt focuses on SSMs, Small Semantic Models. These one-megaparameter models are trained on English text converted to the bAIsic semantic language, allowing training data containing divergent vocabularies to contribute to compatible micromodels.
 
 *bAIsic* and *MESH*: Each micromodel is attached to a bAIsic (Baseline Artificial Intelligence Semantic Interpretation Codex) MESH (Meaning-Embedded Semantic Hash) containing mappings of semantic roots to context-specific vocabulary. When blending micromodels, we also combine their attached MESH objects, allowing the blended logic to communicate through a larger matrix of conceptualized vocabulary.
 
