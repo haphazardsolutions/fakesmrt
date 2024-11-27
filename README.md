@@ -2,9 +2,17 @@
 
 A modular framework for training and deploying resource-efficient language models on modest hardware.
 
-### Nomenclature Note
+### Note
 
-To maintain brevity and clarity, we employ "X" as a parameter unit count. 1KX indicates one *kiloparameter* (a model with 1024 parameters), while 1MX indicates one *megaparameter* (a model with 1024 x 1024 = 1048576 parameters), and so on.
+fakesmrt is being ported over from our blobjectdb platform, and at the moment, there's only one volunteer analyst working part-part-part-time on the task. It is likely that the codebase will not be functional for quite some time. We appreciate your patience.
+
+### Nomenclature
+
+*SSM*: Rather than training LLMs, Large Language Models, fakesmrt focuses on SSMs, Small Semantic Models. These one-megaparameter models are trained on English text converted to the bAIsic sementic language, allowing training data containing divergent vocabularies to contribute to compatible micromodels.
+
+*bAIsic* and *MESH*: Each micromodel is attached to a bAIsic (Baseline Artificial Intelligence Semantic Interpretation Codex) MESH (Meaning-Embedded Semantic Hash) containing mappings of semantic roots to context-specific vocabulary. When blending micromodels, we also combine their attached MESH objects, allowing the blended logic to communicate through a larger matrix of conceptualized vocabulary.
+
+*X*: To maintain brevity and clarity, we employ "X" as a parameter unit count. 1KX indicates one *kiloparameter* (a model with 1024 parameters), while 1MX indicates one *megaparameter* (a model with 1024 x 1024 = 1048576 parameters), and so on.
 
 ## Overview
 
@@ -42,8 +50,9 @@ fakesmrt enables training of small, efficient language models on consumer hardwa
 - Adaptive mixing strategies
 - Memory-efficient implementation
 
-### BAISIC Upscaler
-- Base AI System Integration Component
+### bAIsic / MESH Upscaler
+- Baseline Artificial Intelligence Semantic Interpretation Codex
+- Meaning-Embedded Semantic Hash
 - Context-specific model enhancement
 - Lightweight attention mechanisms
 - Dynamic model routing
